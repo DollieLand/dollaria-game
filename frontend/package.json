@@ -1,0 +1,19 @@
+{
+  "name": "dollaria-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Визуальная часть игры DOLLARIA — Winter Wonderland (Telegram Mini App)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/nunito": "^5.1.0",
+    "@fontsource/pixelify-sans": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
