@@ -1,0 +1,48 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--rose); }
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+img { image-rendering: pixelated; -webkit-user-drag: none; user-select: none; }
+img.smooth { image-rendering: auto; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:disabled { cursor: default; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+h1, h2, h3 { margin: 0; font-family: var(--font-pixel); font-weight: 700; color: var(--ink); }
+p { margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+#app {
+  position: relative;
+  height: var(--app-h);
+  max-width: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--rose);
+}
+
+.boot { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+.boot__gift { width: 128px; animation: bob 1.4s ease-in-out infinite; }
+.boot__text { font-family: var(--font-pixel); color: var(--cream); font-size: 16px; text-shadow: 0 2px 0 var(--ink); }
+
+.view { position: absolute; inset: 0; bottom: calc(var(--nav-h) + var(--safe-bottom)); overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+.view::after { content: ''; display: block; height: 28px; }
+.view--game::after { display: none; }
+.view--full { bottom: 0; }
+.page { min-height: 100%; padding: calc(var(--safe-top) + 12px) 14px 40px; }
+
+@keyframes bob { 50% { transform: translateY(-8px); } }
+@keyframes pop { 0% { transform: scale(.6); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes shake { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

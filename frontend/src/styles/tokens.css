@@ -1,0 +1,37 @@
+:root {
+  /* Палитра DOLLARIA */
+  --rose: #CF7A86;        /* пыльно-розовый фон мира */
+  --rose-soft: #E9B8BE;
+  --berry: #C8475C;       /* активные кнопки */
+  --berry-deep: #B8445A;
+  --ink: #5A1F2B;         /* бордовая обводка и текст */
+  --ink-deep: #3E1019;
+  --cream: #FFF4E8;       /* молочные панели */
+  --milk: #FBEFE6;
+  --pink: #F6CDD3;
+  --pink-deep: #E3A6B1;
+  --gold: #F6CF5A;
+  --gold-deep: #D9A83B;
+  --gold-ink: #6B4A12;
+  --sky: #9CC3E6;         /* нежно-голубой — снежинки и подсказки */
+  --sky-deep: #5B7FA6;
+  --holly: #3E6E55;
+  --text: #4A1520;
+  --text-soft: #6B2A38;
+
+  --font-pixel: 'Pixelify Sans', 'Courier New', monospace;
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+  --edge: 2px solid var(--ink);
+  --lift: 0 3px 0 var(--ink);
+  --lift-big: 0 5px 0 var(--ink);
+
+  /* Безопасные зоны Telegram (полноэкранный режим) и iPhone */
+  --safe-top: max(env(safe-area-inset-top, 0px), calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px)));
+  --safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-safe-area-inset-bottom, 0px));
+  --nav-h: 76px;
+  --app-h: var(--tg-viewport-stable-height, 100dvh);
+}
