@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Иллюстрация куклы появится позже">
+  <rect width="300" height="400" fill="#F6CDD3"/>
+  <circle cx="150" cy="150" r="118" fill="#FBE4E8"/>
+  <path d="M150 62 L104 36 Q92 30 92 44 L92 82 Q92 96 104 90 Z" fill="#E25A6E"/>
+  <path d="M150 62 L196 36 Q208 30 208 44 L208 82 Q208 96 196 90 Z" fill="#E25A6E"/>
+  <rect x="138" y="52" width="24" height="22" rx="8" fill="#B8445A"/>
+  <path d="M86 140 Q86 76 150 76 Q214 76 214 140 L222 262 Q150 284 78 262 Z" fill="#7A2E35"/>
+  <ellipse cx="150" cy="148" rx="46" ry="50" fill="#FBE4DC"/>
+  <path d="M104 132 Q120 96 150 96 Q182 96 196 132 Q170 118 150 120 Q128 118 104 132 Z" fill="#7A2E35"/>
+  <ellipse cx="132" cy="154" rx="6" ry="8" fill="#3B2A30"/><ellipse cx="168" cy="154" rx="6" ry="8" fill="#3B2A30"/>
+  <circle cx="130" cy="151" r="2" fill="#fff"/><circle cx="166" cy="151" r="2" fill="#fff"/>
+  <ellipse cx="120" cy="172" rx="8" ry="4" fill="#F3A7B4"/><ellipse cx="180" cy="172" rx="8" ry="4" fill="#F3A7B4"/>
+  <path d="M143 180 Q150 186 157 180" stroke="#C8475C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M110 214 Q150 196 190 214 L236 400 L64 400 Z" fill="#FFF4E8"/>
+  <path d="M110 214 Q150 236 190 214" stroke="#F6CDD3" stroke-width="10" fill="none"/>
+  <g fill="#fff"><circle cx="124" cy="206" r="4"/><circle cx="137" cy="211" r="4"/><circle cx="150" cy="213" r="4"/><circle cx="163" cy="211" r="4"/><circle cx="176" cy="206" r="4"/></g>
+</svg>
